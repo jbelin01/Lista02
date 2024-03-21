@@ -36,6 +36,7 @@ public class Ex02 {
             }
         }
         
+        leitor.close();
     }
 
     } 

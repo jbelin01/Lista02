@@ -5,13 +5,13 @@ public class Program {
 
     // Ex02.executar();
 
-     Ex03.executar();
+    // Ex03.executar();
 
     // Ex04.executar();
 
     // Ex05.executar();
 
-    //Ex06.executar();
+    Ex06.executar();
 
     // Ex07.executar();
 

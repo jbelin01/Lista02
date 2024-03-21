@@ -28,10 +28,11 @@ public class Ex03 {
 
         for (int i = 0; i < vetor2.length; i++){
 
-            System.out.printf("os valores do número %d.1 são: %.2f \n", i + 1, vetor2[i] ); 
+            System.out.printf("os valores do número %d.1 são: %.2f \n", i + 1, vetor2[i] );
             
         }
         
+        leitor.close();
     }
 }
 }
