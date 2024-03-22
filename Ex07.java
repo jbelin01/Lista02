@@ -8,7 +8,7 @@ public class Ex07 {
             
         Double[] vetor = new Double[5];
         Double[] vetor2 = new Double[5];        
-        Double mediaP = 0.0;
+        
         
         for (int i = 0; i < vetor.length; i++){
 

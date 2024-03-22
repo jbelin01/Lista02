@@ -1,6 +1,7 @@
-import java.util.Scanner;
 
-public class Ex08 {
+    import java.util.Scanner;
+
+public class Ex09 {
     public static void executar(){
 
         Scanner leitor = new Scanner (System.in);     
@@ -27,20 +28,20 @@ public class Ex08 {
     
         for (int i = 0; i < vetorA.length; i++){
 
-            vetorC[i] = vetorA[i];
+            vetorC[i * 2] = vetorA[i];
 
         }
         for (int i = 0; i < vetorB.length; i++){
 
-            vetorC[vetorA.length + i] = vetorB[i];
+            vetorC[(i * 2) + 1] = vetorB[i];
 
         }
 
         System.out.println("O vetor C tem os seguintes elementos:");
 
-        for ( int i = 0; i < vetorC.length; i++){
+        for ( int i = 0; i <= tamanhoC; i++){
 
-            System.out.println( vetorC[i]);
+            System.out.printf("posição %d é %.2f \n", i+1 , vetorC[i]);
 
         }        
         
@@ -49,3 +50,4 @@ public class Ex08 {
     
 }
 }
+
