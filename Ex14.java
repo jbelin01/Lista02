@@ -39,7 +39,7 @@ import java.util.Scanner;
                                       
                 for (int i = 0; i < vetorA.length; i++){
 
-                    System.out.printf("o vetor %d é: %.2f \n", i,  vetorA[i]);
+                    System.out.printf("o vetor %d é: %.2f \n", i + 1,  vetorA[i]);
                     
         
                 }

@@ -27,19 +27,9 @@ public class Program {
 
     //  Ex13.executar();
 
-     Ex14.executar();
+    // Ex14.executar();
 
-    // Ex15.executar();
-
-    // Ex16.executar();
-
-    // Ex17.executar();
-
-    // Ex18.executar();
-
-    // Ex19.executar();
-
-    // Ex20.executar();
-
+     Ex15.executar();
+    
     }
     }
