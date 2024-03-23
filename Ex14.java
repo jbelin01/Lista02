@@ -5,35 +5,44 @@ import java.util.Scanner;
             public static void executar(){
         
                 Scanner leitor = new Scanner (System.in);     
-                    
-                               
-                int n;
-                int i;  
-                int calc;   
-                
-                System.out.println("Digite valor de n: "); 
-                n = leitor.nextInt();
-
-                Double[] vetorA = new Double[n];
-                
-                
-                vetorA[0] = 1.0;
-                vetorA[1] = 1.0;
-                
-                System.out.printf("n = %d e vetor = %.0f, %.0f ", n, vetorA[0], vetorA[1]);
-                     
-                
-                for ( i = 3; i < n; i++){
+                Double[] vetorA = new Double[5];  
+                                        
+                for (int i = 0; i < vetorA.length; i++){
         
-                    vetorA[i] = vetorA[i] + vetorA[i - 1];
+                    System.out.printf("Digite o número %d do vetorA: ", i + 1 ); 
+                    vetorA[i] = leitor.nextDouble();
+        
+                }
 
-                    System.out.printf(", %.0f ", vetorA[i] );
+                Double maior = vetorA[0];  
+                Double ultimo = vetorA[4]; 
+                int posicao = 0;
 
+                               
+                for (int i = 1; i < vetorA.length; i++){
+
+                    if (vetorA[i] > maior){
+                                                
+                        maior = vetorA[i];
+                        posicao = i;
+
+                    }
+        
                 }
 
 
-                System.out.printf(". \n");
-                
+                vetorA[4] = maior;
+                vetorA[posicao] = ultimo;
+
+                System.out.println("" + ultimo);
+                System.out.println("" + posicao);
+                                      
+                for (int i = 0; i < vetorA.length; i++){
+
+                    System.out.printf("o vetor %d é: %.2f \n", i,  vetorA[i]);
+                    
+        
+                }
                 
                 
                 leitor.close();
